@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" total="4" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="56477" started-at="2016-08-25T10:51:29Z" finished-at="2016-08-25T10:52:25Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="56477" started-at="2016-08-25T10:51:29Z" finished-at="2016-08-25T10:52:25Z">
+      <class name="com.facebook.FacebookTest">
+        <test-method status="PASS" signature="verifyLoginPageIsVisible()[pri:0, instance:com.facebook.FacebookTest@732c2a62]" name="verifyLoginPageIsVisible" duration-ms="4329" started-at="2016-08-25T16:21:29Z" finished-at="2016-08-25T16:21:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginPageIsVisible -->
+        <test-method status="PASS" signature="verifyLoginFunctionality()[pri:1, instance:com.facebook.FacebookTest@732c2a62]" name="verifyLoginFunctionality" duration-ms="5412" started-at="2016-08-25T16:21:33Z" finished-at="2016-08-25T16:21:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginFunctionality -->
+        <test-method status="FAIL" signature="verifyStatusUpdateFunctionality()[pri:2, instance:com.facebook.FacebookTest@732c2a62]" name="verifyStatusUpdateFunctionality" duration-ms="25061" started-at="2016-08-25T16:21:38Z" finished-at="2016-08-25T16:22:03Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: .//div[@id='pagelet_composer']//div[@display='block']//button[text()='Post'] (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 19 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.0-beta2', revision: '2aa21c1', time: '2016-08-02 15:03:28 -0700'
+System info: host: 'GS-3012', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, appBuildId=20160623154057, version=, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, browserVersion=47.0.1, platformVersion=10.0, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=Firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=Windows_NT, device=desktop}]
+Session ID: 3f2d0810-eff6-4296-9d82-7f4c9d36b167
+*** Element info: {Using=xpath, value=.//div[@id='pagelet_composer']//div[@display='block']//button[text()='Post']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: .//div[@id='pagelet_composer']//div[@display='block']//button[text()='Post'] (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 19 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.0-beta2', revision: '2aa21c1', time: '2016-08-02 15:03:28 -0700'
+System info: host: 'GS-3012', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, appBuildId=20160623154057, version=, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, browserVersion=47.0.1, platformVersion=10.0, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=Firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=Windows_NT, device=desktop}]
+Session ID: 3f2d0810-eff6-4296-9d82-7f4c9d36b167
+*** Element info: {Using=xpath, value=.//div[@id='pagelet_composer']//div[@display='block']//button[text()='Post']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:683)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:506)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:369)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy6.click(Unknown Source)
+	at com.facebook.HomePage.doPostStatus(HomePage.java:126)
+	at com.facebook.FacebookTest.verifyStatusUpdateFunctionality(FacebookTest.java:95)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyStatusUpdateFunctionality -->
+        <test-method status="FAIL" signature="verifyLogoutFunctionality()[pri:3, instance:com.facebook.FacebookTest@732c2a62]" name="verifyLogoutFunctionality" duration-ms="11570" started-at="2016-08-25T16:22:03Z" finished-at="2016-08-25T16:22:15Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: .//*[@id='BLUE_BAR_ID_DO_NOT_USE']//li[contains(@data-gt,'menu_logout')] (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 22 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.0-beta2', revision: '2aa21c1', time: '2016-08-02 15:03:28 -0700'
+System info: host: 'GS-3012', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, appBuildId=20160623154057, version=, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, browserVersion=47.0.1, platformVersion=10.0, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=Firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=Windows_NT, device=desktop}]
+Session ID: 3f2d0810-eff6-4296-9d82-7f4c9d36b167
+*** Element info: {Using=xpath, value=.//*[@id='BLUE_BAR_ID_DO_NOT_USE']//li[contains(@data-gt,'menu_logout')]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: .//*[@id='BLUE_BAR_ID_DO_NOT_USE']//li[contains(@data-gt,'menu_logout')] (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 22 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.0-beta2', revision: '2aa21c1', time: '2016-08-02 15:03:28 -0700'
+System info: host: 'GS-3012', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, appBuildId=20160623154057, version=, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, browserVersion=47.0.1, platformVersion=10.0, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=Firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=Windows_NT, device=desktop}]
+Session ID: 3f2d0810-eff6-4296-9d82-7f4c9d36b167
+*** Element info: {Using=xpath, value=.//*[@id='BLUE_BAR_ID_DO_NOT_USE']//li[contains(@data-gt,'menu_logout')]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:683)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:506)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:369)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy6.click(Unknown Source)
+	at com.facebook.HomePage.doLogout(HomePage.java:77)
+	at com.facebook.FacebookTest.verifyLogoutFunctionality(FacebookTest.java:101)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogoutFunctionality -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.facebook.FacebookTest@732c2a62]" name="tearDown" is-config="true" duration-ms="10002" started-at="2016-08-25T16:22:15Z" finished-at="2016-08-25T16:22:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.facebook.FacebookTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
